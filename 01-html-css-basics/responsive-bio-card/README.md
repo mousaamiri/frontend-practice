@@ -4,7 +4,17 @@ A simple, single-column bio card built with vanilla HTML, CSS, and JavaScript as
 
 ## Preview
 
-![Bio Card Demo](docs/Responsive%20Bio%20card.mp4)
+[![Demo Video](docs/images/dark.png)](docs/demo.mp4)
+
+### Screenshots
+
+![Light Theme](docs/images/light.png)
+
+![Dark Theme](docs/images/hover-light.png)
+
+![Hover State](docs/images/dark.png)
+
+![Mobile View](docs/images/hover-dark.png)
 
 ## Features
 
