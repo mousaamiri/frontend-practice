@@ -1,0 +1,77 @@
+
+.card{
+    position: relative;
+    height: min-content;
+    max-width: 400px;
+    width: 100%;
+    padding: 10px;
+    
+}
+.card-image img{
+     display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    padding: 6px;
+}
+.card-content{
+    background-color:var( --bg-canvas);
+    position: absolute;
+    top:45%;
+    left: 0;
+    padding: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+
+    /* animation */
+      transition: opacity .4s ease,
+                transform .4s ease,
+                visibility .4s ease;
+}
+.card-title{
+    text-align: center;
+    margin-top: 10px;
+}
+.card-description{
+    text-align: center;
+    margin-top: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+.folowers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.folowers img{
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+}
+.folowers p{
+    margin-left: 5px;
+}
+/* Switch theme  */
+.switch-theme{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    /* animaiton */
+    transition: all .3s ease;
+}
+.switch-theme:hover{
+    transform: scale(1.1) rotate(20deg);
+    transition: transform .3s ease;
+}
