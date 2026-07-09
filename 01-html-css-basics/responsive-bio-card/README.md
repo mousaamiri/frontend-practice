@@ -4,17 +4,18 @@ A simple, single-column bio card built with vanilla HTML, CSS, and JavaScript as
 
 ## Preview
 
-[![Demo Video](docs/images/dark.png)](docs/demo.mp4)
+[![Demo Video]](docs/demo.mp4)
 
-### Screenshots
-
-![Light Theme](docs/images/light.png)
-
-![Dark Theme](docs/images/hover-light.png)
-
-![Hover State](docs/images/dark.png)
-
-![Mobile View](docs/images/hover-dark.png)
+<table>
+  <tr>
+    <td align="center"><img src="docs/light.png" width="100%"/><br/><sub>Light Theme</sub></td>
+    <td align="center"><img src="docs/dark.png" width="100%"/><br/><sub>Dark Theme</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/hover-light.png" width="100%"/><br/><sub>Hover — Light</sub></td>
+    <td align="center"><img src="docs/hover-dark.png" width="100%"/><br/><sub>Hover — Dark</sub></td>
+  </tr>
+</table>
 
 ## Features
 
