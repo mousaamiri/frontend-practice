@@ -1,0 +1,162 @@
+nav {
+    background-color: var(--bg-canvas);
+    width: 100%;
+    box-shadow: 0 1px 200px 0.1px var(--fg-default);
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 5%;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    color: var(--fg-default);
+    text-decoration: none;
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-brand a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-brand a img {
+
+    width: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0 1rem;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: var(--fg-default);
+
+    transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: var(--color-primary-hover);
+    text-shadow: 1px 1px 15px var(--color-primary);
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-toggle {
+    display: none;
+}
+
+.switch-theme {
+    top: 1rem;
+    left: 1rem;
+    background-color: transparent;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle {
+    background-color: transparent;
+    width: 30px;
+    height: 21px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.nav-toggle:hover .bar {
+    background-color: var(--color-primary-hover);
+    box-shadow: 0 1px 1px 0 var(--color-primary);
+
+}
+
+.nav-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--bg-emphasis);
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+}
+/* main */
+main {
+    min-height: calc(100vh - 70px); 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.main-title {
+    text-align: center;
+}
+/* Responsive */
+@media screen and (max-width:767px) {
+    nav{
+        position: flex;
+    }
+    .nav-menu {
+        display: none;
+        position: absolute;
+        width: 90%;
+       
+        top: 0;
+        background: var(--bg-inset);
+        border-radius: 10px;
+        list-style: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 5rem 0 0 0;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .nav-menu li {
+        width: 90%;
+        
+    }
+
+    .nav-menu li a {
+        display: block;
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 0;
+        padding: 8px;
+    }
+
+    .nav-menu li a:hover {
+        background-color: var(--border-default);
+        border-radius: 8px;
+    }
+
+
+    .nav-toggle {
+        display: flex;
+    }
+}
