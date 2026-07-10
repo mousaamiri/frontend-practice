@@ -4,7 +4,7 @@ A responsive pricing table with three plans, built with vanilla HTML, CSS, and J
 
 ## Preview
 
-[![Demo Video](docs/images/dark.png)](docs/demo.mp4)
+[![Demo Video]](docs/demo.mp4)
 
 ### Screenshots
 
