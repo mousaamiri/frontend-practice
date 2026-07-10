@@ -1,0 +1,28 @@
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 1rem;
+    max-width:1390px ;
+}
+.card{
+    flex: 1;
+}
+
+
+/* =================== Responsive ===================== */
+@media screen and (max-width:767px) {
+    .features{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .card{
+        flex-direction: column;
+    }
+}

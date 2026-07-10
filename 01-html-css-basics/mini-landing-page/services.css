@@ -1,0 +1,39 @@
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+.service-card{
+    flex: 1;
+    border-radius: 12px;
+    max-width: 450px;
+    border: 3px solid var(--border-default);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: content;
+    padding: 1rem;
+    background-color: var(--border-emphasis);
+    
+}
+.service-card img{
+    width: 100%;
+}
+
+
+/* =================== Responsive ===================== */
+@media screen and (max-width:767px) {
+    .service-card{
+        max-width: 250px;
+    }
+}
+@media screen and (max-width:600px) {
+    .service-card{
+        max-width: 100%;
+    }
+    .services{
+        flex-direction: column;
+    }
+}

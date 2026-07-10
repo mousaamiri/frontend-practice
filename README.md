@@ -16,7 +16,7 @@
 - [ ] [Responsive Bio Card](./01-html-css-basics/responsive-bio-card) — کارت معرفی شخصی با Flexbox
 - [ ] [Pricing Table](./01-html-css-basics/pricing-table) — جدول قیمت‌گذاری با CSS Grid
 - [ ] [Responsive Navbar](./01-html-css-basics/responsive-navbar/) — نوار ناوبری با منوی همبرگری برای موبایل
-- [ ] [Mini Landing Page](./01-html-css-basics/minin-landing-page) — ترکیب Flexbox + Grid در یک صفحه کامل
+- [ ] [Mini Landing Page](./01-html-css-basics/mini-landing-page) — ترکیب Flexbox + Grid در یک صفحه کامل
 
 ### 📁 02 - CSS Advanced
 *(بعداً تکمیل و لینک می‌شود)*

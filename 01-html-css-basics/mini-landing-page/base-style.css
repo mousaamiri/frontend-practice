@@ -1,0 +1,243 @@
+/* Thin - 100 */
+@font-face {
+    font-family: "Kalameh";
+    src: url("assets/fonts/KalamehWebFaNum-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Regular - 400 */
+@font-face {
+    font-family: "Kalameh";
+    src: url("assets/fonts/KalamehWebFaNum-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold - 700 */
+@font-face {
+    font-family: "Kalameh";
+    src: url("assets/fonts/KalamehWebFaNum-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Black - 900 */
+@font-face {
+    font-family: "Kalameh";
+    src: url("assets/fonts/KalamehWebFaNum-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+:root,
+[data-theme="light"] {
+    /* === Background Colors === */
+    --bg-canvas: #f6f8fa;     
+    --bg-default: #ffffff;    
+    --bg-subtle: #f6f8fa;
+    --bg-inset: #ebecf0;      
+    --bg-muted: #f6f8fa;
+    --bg-emphasis: #1f2328;   
+    
+    /* === Foreground (Text) Colors === */
+    --fg-default: #1f2328;    
+    --fg-muted: #656d76;      
+    --fg-subtle: #8c959f;     
+    --fg-on-emphasis: #ffffff;
+    
+    /* === Border Colors === */
+    --border-default: #d0d7de;
+    --border-muted: #d8dee4;
+    --border-subtle: rgba(31, 35, 40, 0.08);
+    --border-emphasis: #1f232865;
+    
+    /* === Primary (Blue) === */
+    --color-primary: #4a6bfd;     
+    --color-primary-hover: #0c57d0;
+    --color-primary-active: #0b4cb4;
+    --color-primary-subtle: #ddf4ff;
+    
+    /* === Success (Green) === */
+    --color-success: #1f883d;   
+    --color-success-hover: #1a7f37;
+    --color-success-active: #187131;
+    --color-success-subtle: #dafbe1;
+    
+    /* === Warning (Yellow) === */
+    --color-warning: #9a6700;
+    --color-warning-hover: #825500;
+    --color-warning-active: #6e4700;
+    --color-warning-subtle: #fff8c5;
+    
+    /* === Error/Danger (Red) === */
+    --color-danger: #cf222e;
+    --color-danger-hover: #b61823;
+    --color-danger-active: #a0111b;
+    --color-danger-subtle: #ffebe9;
+    
+    /* === Accent Colors === */
+    --color-accent-purple: #8250df;
+    --color-accent-pink: #bf3989;
+    --color-accent-orange: #bc4c00;
+    
+    /* === Shadows === */
+    --shadow-sm: 0 1px 0 rgba(31, 35, 40, 0.04);
+    --shadow-md: 0 3px 6px rgba(140, 149, 159, 0.15);
+    --shadow-lg: 0 8px 24px rgba(140, 149, 159, 0.2);
+    
+    /* === Typography === */
+    --font-family: "Kalameh", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    
+    /* === Spacing === */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --space-5: 32px;
+    
+    /* === Border Radius === */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 12px;
+    --radius-full: 9999px;
+    
+    /* === Transitions === */
+    --transition-fast: 0.08s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-normal: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="dark"] {
+    /* === Background Colors === */
+    --bg-canvas: #0d1117;       
+    --bg-default: #0d1117;
+    --bg-subtle: #161b22;       
+    --bg-inset: #010409;        
+    --bg-muted: #161b22;
+    --bg-emphasis: #f0f6fc;
+    
+    /* === Foreground (Text) Colors === */
+    --fg-default: #e6edf3;      
+    --fg-muted: #848d97;        
+    --fg-subtle: #6e7681;
+    --fg-on-emphasis: #0d1117;
+    
+    /* === Border Colors === */
+    --border-default: #30363d;  
+    --border-muted: #21262d;
+    --border-subtle: rgba(240, 246, 252, 0.1);
+    --border-emphasis: #848d9750;
+    
+    /* === Primary (Blue) === */
+    --color-primary: #002ae6;   
+    --color-primary-hover: #388bfd;
+    --color-primary-active: #58a6ff;
+    --color-primary-subtle: rgba(56, 139, 253, 0.1);
+    
+    /* === Success (Green) === */
+    --color-success: #238636;
+    --color-success-hover: #2ea043;
+    --color-success-active: #3fb950;
+    --color-success-subtle: rgba(46, 160, 67, 0.15);
+    
+    /* === Warning (Yellow) === */
+    --color-warning: #9e6a03;
+    --color-warning-hover: #b57a05;
+    --color-warning-active: #d29922;
+    --color-warning-subtle: rgba(187, 128, 9, 0.1);
+    
+    /* === Error/Danger (Red) === */
+    --color-danger: #da3633;
+    --color-danger-hover: #f85149;
+    --color-danger-active: #ff7b72;
+    --color-danger-subtle: rgba(248, 81, 73, 0.1);
+    
+    /* === Accent Colors === */
+    --color-accent-purple: #bc8cff;
+    --color-accent-pink: #f778ba;
+    --color-accent-orange: #ffa657;
+    
+    /* === Shadows === */
+    --shadow-sm: 0 0 transparent;
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.7);
+}
+
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bg-canvas);
+    color: var(--fg-default);
+    font-family: var(--font-family);
+    background-image: url(assets/images/bg.svg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card  {
+    background-color: var(--bg-subtle);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-3);
+
+}
+.btn{
+    font-family: "Kalameh";
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    margin: auto 2px 12px 8px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.btn:hover{
+    transform:translateY(10px);
+    box-shadow: 0 0 25px 0 var(--color-primary-active);
+}
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--fg-on-emphasis);
+    border: none;
+    border-radius: var(--radius-md);
+    padding: var(--space-2) var(--space-3);
+    transition: background-color var(--transition-fast);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn-danger {
+    background-color: var(--color-danger);
+    color: var(--fg-on-emphasis);
+}
+
+.text-muted {
+    color: var(--fg-muted);
+}
+
+.alert-success {
+    background-color: var(--color-success-subtle);
+    border: 1px solid var(--color-success);
+    color: var(--color-success);
+}
+.switch-theme {
+    top: 1rem;
+    left: 1rem;
+    background-color: transparent;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    cursor: pointer;
+}

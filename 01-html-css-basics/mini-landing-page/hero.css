@@ -1,0 +1,50 @@
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1% auto;
+}
+
+.hero {
+    color: var(--border-default);
+    background-image: url("assets/images/travel.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+
+    padding: 5%;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--border-emphasis);
+    border-radius: 8px;
+    padding: 2%;
+}
+
+.hero .hero-title {
+    font-weight: 900;
+}
+
+.hero .hero-description {
+    font-size: 1.3rem;
+}
+
+.consulting {
+    background-color: var(--color-primary);
+    border: 2px solid var(--border-default);
+    color: white;
+}
+
+.turs {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
