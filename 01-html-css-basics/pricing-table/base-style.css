@@ -1,0 +1,221 @@
+/* Thin - 100 */
+@font-face {
+    font-family: "Kalameh";
+    src: url("assets/fonts/KalamehWebFaNum-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Regular - 400 */
+@font-face {
+    font-family: "Kalameh";
+    src: url("assets/fonts/KalamehWebFaNum-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold - 700 */
+@font-face {
+    font-family: "Kalameh";
+    src: url("assets/fonts/KalamehWebFaNum-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Black - 900 */
+@font-face {
+    font-family: "Kalameh";
+    src: url("assets/fonts/KalamehWebFaNum-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+:root,
+[data-theme="light"] {
+    /* === Background Colors === */
+    --bg-canvas: #fbffe7;
+    /* --bg-canvas: #311919; */
+    --bg-default: #ffffff;
+    --bg-subtle: #f6f8fa;
+    --bg-inset: #f6f8fa;
+    --bg-muted: #f6f8fa;
+    --bg-emphasis: #24292f;
+    
+    /* === Foreground (Text) Colors === */
+    --fg-default: #24292f;
+    --fg-muted: #57606a;
+    --fg-subtle: #6e7781;
+    --fg-on-emphasis: #ffffff;
+    
+    /* === Border Colors === */
+    --border-default: #d0d7de;
+    --border-muted: #d8dee4;
+    --border-subtle: #d0d7de;
+    --border-emphasis: #24292f;
+    
+    /* === Primary (Blue) === */
+    --color-primary: #0677f8;
+    --color-primary-hover: #0860ca;
+    --color-primary-active: #0550ae;
+    --color-primary-subtle: #ddf4ff;
+    
+    /* === Success (Green) === */
+    --color-success: #1a7f37;
+    --color-success-hover: #116329;
+    --color-success-active: #045728;
+    --color-success-subtle: #dafbe1;
+    
+    /* === Warning (Yellow) === */
+    --color-warning: #9a6700;
+    --color-warning-hover: #7d4e00;
+    --color-warning-active: #663900;
+    --color-warning-subtle: #fff8c5;
+    
+    /* === Error/Danger (Red) === */
+    --color-danger: #cf222e;
+    --color-danger-hover: #a40e26;
+    --color-danger-active: #82071e;
+    --color-danger-subtle: #ffebe9;
+    
+    /* === Accent Colors === */
+    --color-accent-purple: #8250df;
+    --color-accent-pink: #bf3989;
+    --color-accent-orange: #bc4c00;
+    
+    /* === Shadows === */
+    --shadow-sm: 0 1px 0 rgba(27, 31, 36, 0.04);
+    --shadow-md: 0 3px 6px rgba(140, 149, 159, 0.15);
+    --shadow-lg: 0 8px 24px rgba(140, 149, 159, 0.2);
+    
+    /* === Typography === */
+    --font-family: "Kalameh", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    
+    /* === Spacing === */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --space-5: 32px;
+    
+    /* === Border Radius === */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 12px;
+    --radius-full: 9999px;
+    
+    /* === Transitions === */
+    --transition-fast: 0.1s ease;
+    --transition-normal: 0.2s ease;
+
+}
+[data-theme="dark"] {
+    /* === Background Colors === */
+    --bg-canvas: #0d1117;
+    --bg-default: #0d1117;
+    --bg-subtle: #161b22;
+    --bg-inset: #010409;
+    --bg-muted: #161b22;
+    --bg-emphasis: #6e7681;
+    
+    /* === Foreground (Text) Colors === */
+    --fg-default: #c9d1d9;
+    --fg-muted: #8b949e;
+    --fg-subtle: #6e7681;
+    --fg-on-emphasis: #ffffff;
+    
+    /* === Border Colors === */
+    --border-default: #30363d;
+    --border-muted: #21262d;
+    --border-subtle: #30363d;
+    --border-emphasis: #6e7681;
+    
+    /* === Primary (Blue) === */
+    --color-primary: #0b6bd8;
+    --color-primary-hover: #79c0ff;
+    --color-primary-active: #a5d6ff;
+    --color-primary-subtle: rgba(56, 139, 253, 0.15);
+    
+    /* === Success (Green) === */
+    --color-success: #3fb950;
+    --color-success-hover: #56d364;
+    --color-success-active: #7ee787;
+    --color-success-subtle: rgba(46, 160, 67, 0.15);
+    
+    /* === Warning (Yellow) === */
+    --color-warning: #d29922;
+    --color-warning-hover: #e3b341;
+    --color-warning-active: #f2cc60;
+    --color-warning-subtle: rgba(187, 128, 9, 0.15);
+    
+    /* === Error/Danger (Red) === */
+    --color-danger: #f85149;
+    --color-danger-hover: #ff7b72;
+    --color-danger-active: #ffa198;
+    --color-danger-subtle: rgba(248, 81, 73, 0.15);
+    
+    /* === Accent Colors === */
+    --color-accent-purple: #bc8cff;
+    --color-accent-pink: #f778ba;
+    --color-accent-orange: #ffa657;
+    
+    /* === Shadows === */
+    --shadow-sm: 0 0 transparent;
+    --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+
+
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bg-canvas);
+    color: var(--fg-default);
+    font-family: var(--font-family);
+    background-image: url(assets/images/bg.svg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card  {
+    background-color: var(--bg-subtle);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-3);
+
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--fg-on-emphasis);
+    border: none;
+    border-radius: var(--radius-md);
+    padding: var(--space-2) var(--space-3);
+    transition: background-color var(--transition-fast);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn-danger {
+    background-color: var(--color-danger);
+    color: var(--fg-on-emphasis);
+}
+
+.text-muted {
+    color: var(--fg-muted);
+}
+
+.alert-success {
+    background-color: var(--color-success-subtle);
+    border: 1px solid var(--color-success);
+    color: var(--color-success);
+}

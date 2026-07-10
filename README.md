@@ -14,7 +14,7 @@
 پایه‌گذاری: layout, flexbox, grid, responsive design
 
 - [ ] [Responsive Bio Card](./01-html-css-basics/responsive-bio-card) — کارت معرفی شخصی با Flexbox
-- [ ] Pricing Table — جدول قیمت‌گذاری با CSS Grid
+- [ ] [Pricing Table](./01-html-css-basics/pricing-table) — جدول قیمت‌گذاری با CSS Grid
 - [ ] Responsive Navbar — نوار ناوبری با منوی همبرگری برای موبایل
 - [ ] Mini Landing Page — ترکیب Flexbox + Grid در یک صفحه کامل
 

@@ -1,0 +1,87 @@
+.switch-theme {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    width: 2.5rem;
+    height:2.5rem;
+    border: none;
+    cursor: pointer;
+}
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    margin-top: 5rem;
+    
+}
+.pricing-card{
+    flex: 1;
+    min-width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--fg-default);
+    border-radius: 10px;
+
+    /* animation */
+    transition: transform 0.3s ease;
+}
+.pricing-card:hover{
+    transform: scale(1.05);
+}
+.pricing-card__title{
+
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.pricing-card__price{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.pricing-card__features{
+
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+.pricing-card__marked{
+    background-color: var(--color-primary);
+}
+.pricing-card__marked button{
+    background-color: var(--bg-default);
+    color: var(--fg-default);
+}
+.pricing-card__button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+    font-family: "Kalameh", sans-serif;
+  
+    
+}
+/* Responsive  */
+@media screen and (max-width: 768px) {
+
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    
+}
