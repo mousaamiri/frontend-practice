@@ -18,10 +18,15 @@
 - [ ] [Responsive Navbar](./01-html-css-basics/responsive-navbar/) — نوار ناوبری با منوی همبرگری برای موبایل
 - [ ] [Mini Landing Page](./01-html-css-basics/mini-landing-page) — ترکیب Flexbox + Grid در یک صفحه کامل
 
-### 📁 02 - CSS Advanced
-*(بعداً تکمیل و لینک می‌شود)*
+### 📁 [02 - CSS Advanced](./02-css-advanced)
+تکنیک‌های پیشرفته CSS: انیمیشن، ترنزیشن، pseudo-classes مدرن (`:has()`)
 
-- [ ] Animations & Transitions
+- [x] [Toggle Switch](./02-css-advanced/toggle-switch) — سوییچ روشن/خاموش با `:has()`
+- [x] [Accordion / FAQ](./02-css-advanced/animated-accordion) — آکاردئون تک‌بازشو با انیمیشن `max-height`
+- [ ] Loading Spinner / Skeleton Loading
+- [x] [Card Hover Effects](./02-css-advanced/card-hover-effects) — سه افکت هاور مختلف روی کارت
+- [x] [Modal / Dialog](./02-css-advanced/modal-enter-exit-effect) — مودال با انیمیشن ورود/خروج
+- [ ] Toast / Notification
 - [ ] CSS Variables & Theming (دارک/لایت مود)
 
 ### 📁 03 - JavaScript Fundamentals

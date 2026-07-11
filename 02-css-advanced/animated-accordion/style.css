@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Arad";
+    src: url("fonts/AradNL-BlackDots3.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Arad";
+    src: url("fonts/AradNL-SemiBoldDots3.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Arad";
+    src: url("fonts/AradNL-RegularDots3.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --bg-color: #2d303f;
+    --bg-accordion: #213f6b;
+    --bg-panel: #395a8ba2;
+
+    --accordion-title: #0f0e0e;
+    --accordion-title-bg: #a0b4c2;
+    --accordion-title-hover: #352c2c93;
+    --accordion-title-click: #28304d;
+    --fg-color: #fff;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fg-color);
+    font-family: "Arad";
+}
+
+.accordion-container {
+    background-color: var(--bg-accordion);
+    width: 450px;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    text-align: end;
+    justify-content: flex-end;
+    align-items: end;
+    flex-direction: column;
+}
+
+.accordion-title:first-of-type {
+    border-radius: 8px 8px 0 0;
+}
+
+.accordion-title:last-of-type {
+    border-radius: 0 0 8px 8px;
+}
+
+.accordion-title:last-of-type:has(+.panel.active) {
+    border-radius: 0;
+}
+
+.active:last-of-type {
+    border-radius: 0 0 8px 8px;
+
+}
+
+.accordion-title {
+    padding: 12px 24px;
+    font-family: "Arad";
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    background-color: var(--accordion-title-bg);
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.accordion-title:hover {
+    box-shadow: 0 1px 8px 0 var(--color-thumb-select);
+    color: #2d303f;
+    transform: scale(1.02);
+
+}
+
+.panel {
+    background-color: var(--bg-panel);
+    padding: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.panel.active {
+    max-height: 300px;
+    padding: 1rem;
+    opacity: 1;
+}

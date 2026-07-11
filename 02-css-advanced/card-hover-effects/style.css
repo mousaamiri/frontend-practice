@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "Arad";
+    src: url("fonts/AradNL-BlackDots3.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Arad";
+    src: url("fonts/AradNL-SemiBoldDots3.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Arad";
+    src: url("fonts/AradNL-RegularDots3.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+:root {
+    --bg-space: #000000;
+    --bg-canvas: #161617;
+    --bg-surface: #1d1d1f;
+    --bg-surface-elevated: #2d2d30;
+
+    --text-white: #f5f5f7;
+    --text-silver: #c9c9ce;
+    --text-muted: #6e6e73;
+
+    --apple-blue: #0071e3;
+    --apple-blue-hover: #4393e6;
+    --apple-purple: #bf5af2;
+    --apple-purple-hover: #d286f7;
+    --apple-pink: #ff375f;
+    --apple-pink-hover: #ff6080;
+    --apple-orange: #ff9f0a;
+    --apple-orange-hover: #ffb340;
+    --apple-green: #30d158;
+    --apple-green-hover: #5cd87c;
+    --apple-cyan: #64d2ff;
+
+    --border-subtle: #333336;
+    --border-active: #424245;
+
+    --gradient-start: #000105;
+    --gradient-end: #000105ee;
+
+    --glow-blue: rgba(0, 113, 227, 0.15);
+    --glow-purple: rgba(19, 3, 27, 0.15);
+    --glow-pink: rgba(255, 55, 95, 0.15);
+
+    --shadow-premium: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: "Arad", -apple-system;
+    background-color: var(--bg-space);
+    color: var(--text-white);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    text-align: end;
+    background-color: var(--bg-canvas);
+    border: 1px solid var(--border-subtle);
+    border-radius: 18px;
+    padding: 16px 12px;
+    width: 320px;
+    box-sizing: border-box;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: contain;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    filter: brightness(0.9) contrast(1.1);
+}
+
+.card-content {
+    position: absolute;
+    padding: 24px;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    margin: 12px;
+    background: var(--gradient-end);
+    border-radius: 24px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.3s ease;
+}
+
+.card:hover .card-content {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+}
+
+.card-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 24px 0 12px 0;
+    color: var(--text-white);
+
+}
+
+.card-description {
+    font-size: 0.95rem;
+    color: var(--text-silver);
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* animations  */
+
+.scale-anim,
+.perspective-anim,
+.rotateY-anim {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    perspective: 1000px;
+
+}
+
+.scale-anim::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    background: linear-gradient(45deg, #0071e3, #bf5af2, #ff375f);
+    filter: blur(6px);
+    z-index: -1;
+    opacity: 0.4;
+    transition: all 1s ease-in-out;
+}
+
+.scale-anim:hover::before {
+    transform: rotate(3deg);
+}
+
+.scale-anim:hover {
+    transform: scale(0.95);
+}
+
+.perspective-anim:hover {
+    transform: translateY(10px);
+}
+
+.rotateY-anim:hover {
+    transform: rotateX(20deg) rotateY(-30deg);
+}
