@@ -23,11 +23,11 @@
 
 - [x] [Toggle Switch](./02-css-advanced/toggle-switch) — سوییچ روشن/خاموش با `:has()`
 - [x] [Accordion / FAQ](./02-css-advanced/animated-accordion) — آکاردئون تک‌بازشو با انیمیشن `max-height`
-- [ ] Loading Spinner / Skeleton Loading
 - [x] [Card Hover Effects](./02-css-advanced/card-hover-effects) — سه افکت هاور مختلف روی کارت
 - [x] [Modal / Dialog](./02-css-advanced/modal-enter-exit-effect) — مودال با انیمیشن ورود/خروج
-- [ ] Toast / Notification
-- [ ] CSS Variables & Theming (دارک/لایت مود)
+- [x] [Loading Spinner / Skeleton Loading](./02-css-advanced/loading-spinner) — اسپینر، پراگرس‌بار و اسکلتون لودینگ
+- [x] [Toast / Notification](./02-css-advanced/toast-notification) — نوتیفیکیشن با انیمیشن ورود/خروج و حذف تأخیری از DOM
+- [x] [Animated Navbar Underline](./02-css-advanced/animated-navbar-underline) — هایلایت انیمیشنی روی لینک‌ها و دکمه‌ها با hover
 
 ### 📁 03 - JavaScript Fundamentals
 *(بعداً تکمیل و لینک می‌شود)*
