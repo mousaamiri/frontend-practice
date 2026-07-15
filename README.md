@@ -29,12 +29,12 @@
 - [x] [Toast / Notification](./02-css-advanced/toast-notification) — نوتیفیکیشن با انیمیشن ورود/خروج و حذف تأخیری از DOM
 - [x] [Animated Navbar Underline](./02-css-advanced/animated-navbar-underline) — هایلایت انیمیشنی روی لینک‌ها و دکمه‌ها با hover
 
-### 📁 03 - JavaScript Fundamentals
-*(بعداً تکمیل و لینک می‌شود)*
+### 📁 [03 - JavaScript Fundamentals](./03-javascript-fundamentals)
+*(در حال کار)*
 
 هدف این بخش نه فقط یادگیری JS، بلکه آماده‌سازی ذهنی برای **React** است. تمرین‌ها طوری چیده شدن که مفاهیمی مثل state، event handling و component thinking را حتی بدون فریم‌ورک تمرین کنی.
 
-- [ ] Modern JS Playground (ES6+: let/const, arrow functions, destructuring, spread/rest, template literals)
+- [X] [Modern JS Playground (ES6+: let/const, arrow functions, destructuring, spread/rest, template literals)](./03-javascript-fundamentals/modern-js-playground)
 - [ ] Array Methods Drills (map, filter, reduce, find — پایه‌ی رندر لیست‌ها در React)
 - [ ] DOM Manipulation Basics (querySelector, event listeners, classList)
 - [ ] Vanilla JS To-Do List (مدیریت state با یک آبجکت JS ساده، بدون فریم‌ورک)
