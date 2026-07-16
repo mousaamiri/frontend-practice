@@ -35,7 +35,7 @@
 هدف این بخش نه فقط یادگیری JS، بلکه آماده‌سازی ذهنی برای **React** است. تمرین‌ها طوری چیده شدن که مفاهیمی مثل state، event handling و component thinking را حتی بدون فریم‌ورک تمرین کنی.
 
 - [X] [Modern JS Playground (ES6+: let/const, arrow functions, destructuring, spread/rest, template literals)](./03-javascript-fundamentals/modern-js-playground)
-- [ ] Array Methods Drills (map, filter, reduce, find — پایه‌ی رندر لیست‌ها در React)
+- [X] [Array Methods Drills (map, filter, reduce, find — پایه‌ی رندر لیست‌ها در React)](./03-javascript-fundamentals/array-methods-drills)
 - [ ] DOM Manipulation Basics (querySelector, event listeners, classList)
 - [ ] Vanilla JS To-Do List (مدیریت state با یک آبجکت JS ساده، بدون فریم‌ورک)
 - [ ] Component-style Counter (تابعی که یک تکه UI را «رندر» می‌کند و با تغییر state دوباره رندر می‌شود — شبیه‌سازی ذهنی الگوی React)
