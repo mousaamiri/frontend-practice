@@ -1,0 +1,183 @@
+:root {
+    --bg-color: #201c14;
+    --bg-surface: #2a251b;
+    --bg-elevated: #342e22;
+
+    --fg-color: #a3a29f;
+    --fg-muted: #7a7976;
+    --fg-emphasis: #e8e6e1;
+
+    --accent-color: #cfae6f;
+    --accent-hover: #e0c285;
+    --accent-active: #b89a5e;
+
+
+    --hover-bg: #3a3326;
+    --active-bg: #4a4130;
+    --focus-ring: rgba(207, 174, 111, 0.4);
+
+    --border-color: #3d362a;
+    --border-color-hover: #5c5241;
+    --border-color-accent: var(--accent-color);
+
+    --border-width: 1px;
+    --border-width-thick: 2px;
+
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 16px;
+    --border-radius-full: 9999px;
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    --padding-btn: var(--spacing-sm) var(--spacing-md);
+    --padding-input: var(--spacing-sm) var(--spacing-md);
+    --padding-card: var(--spacing-lg);
+
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+
+    --font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    font-family: var(--font-family);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#app {
+    flex: 1;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.user-card {
+    border: var(--border-width-thick) solid var(--border-color);
+    padding: var(--padding-card);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 340px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.user-card:hover {
+    border: var(--border-width-thick) solid var(--border-color-hover);
+    box-shadow: var(--shadow-lg);
+    transform: scaleX(1.03) scaleY(1.03);
+}
+
+.user-card__header,
+.user-card__contact {
+    border: var(--border-radius-sm) solid var(--border-color);
+    padding: var(--padding-input);
+    gap: 0;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 12px;
+}
+
+.user-card__contact {
+    border: var(--border-width-thick) solid var(--border-color);
+}
+
+.user-card__address {
+    border: var(--border-width) solid var(--border-color-hover);
+    border-radius: var(--border-radius-sm);
+    padding: var(--padding-input);
+    flex: 1;
+}
+
+.user-card__contact a {
+    text-decoration: none;
+    list-style: none;
+    color: yellow;
+}
+/* Error  */
+.error-message{
+    border: 2px solid rgba(178, 34, 34, 0.534);
+    background-color: rgba(178, 34, 34, 0.24);
+    color: white;
+    justify-content: center;
+    border-radius: 3px;
+    padding: 12px 24px;
+}
+/* Loading */
+.loading{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(138, 80, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.loading::before{
+    content: "";
+    position: absolute;
+    background-color:yellow;
+    border-radius: 25px;
+    width: 100%;
+    height: 80%;
+    animation: rotate 0.9s ease-in infinite;
+}
+.loading::after{
+    content: "";
+    background-color:#201c14;
+    width: 98px;
+    height: 98px;
+    border-radius: 999px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
