@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --primary:#00BBF9;
+    --primary-hover:#24c8ff;
+
+    --danger:#ef4444;
+    --danger-hover:#f87171;
+    --success:#22c55e;
+    --success-hover:#4ade80;
+
+    --bg:#0b1120;
+    --calculator:#172033;
+    --display:#0f172a;
+    --button:#253247;
+    --button-hover:#334155;
+
+    --text:#ffffff;
+    --border:rgba(0,187,249,.2);
+
+    --radius:14px;
+
+    --after-content:"";
+}
+
+body{
+    background:var(--bg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.calculator{
+    width:360px;
+    padding:20px;
+    border-radius:20px;
+    background:var(--calculator);
+    border:1px solid var(--border);
+    box-shadow:
+        0 0 20px rgba(0,187,249,.08),
+        0 15px 40px rgba(0,0,0,.45);
+}
+
+.display{
+    height:85px;
+    background:var(--display);
+    color:var(--text);
+    border-radius:var(--radius);
+    border:1px solid var(--border);
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    padding:0 18px;
+    margin-bottom:18px;
+
+    font-size:2.2rem;
+    font-weight:bold;
+    overflow:hidden;
+}
+.error{
+    height:85px;
+    background:var(--danger);
+    color:var(--text);
+    border-radius:var(--radius);
+    border:1px solid var(--border);
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    padding:0 18px;
+    margin-bottom:18px;
+
+    font-size:2.2rem;
+    font-weight:bold;
+    overflow:hidden;
+}
+#display{
+    position: relative;
+}
+#display::after{
+    content: var(--after-content,"");
+    position: absolute;
+    bottom: 4px;
+    font-size: 16px;
+    color: rgb(145, 147, 148);
+}
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+.buttons button{
+    height:65px;
+    border:none;
+    border-radius:var(--radius);
+    background:var(--button);
+    color:var(--text);
+    font-size:1.3rem;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.buttons button:hover{
+    background:var(--button-hover);
+}
+
+.buttons button:active{
+    transform:scale(.95);
+}
+
+button[data-action="add"],
+button[data-action="subtract"],
+button[data-action="multiply"],
+button[data-action="divide"]{
+    background:var(--primary);
+}
+
+button[data-action="add"]:hover,
+button[data-action="subtract"]:hover,
+button[data-action="multiply"]:hover,
+button[data-action="divide"]:hover{
+    background:var(--primary-hover);
+}
+
+button[data-action="equals"]{
+    background:var(--success);
+    grid-row:4 / span 2;
+    grid-column:4;
+    height:100%;
+}
+
+button[data-action="equals"]:hover{
+    background:var(--success-hover);
+}
+
+
+button[data-action="clear"]{
+    background:var(--danger);
+}
+
+button[data-action="clear"]:hover{
+    background:var(--danger-hover);
+}
+
+
+button[data-action="backspace"]{
+    color:var(--primary);
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+
+.zero{
+    grid-column:span 2;
+}

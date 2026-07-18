@@ -30,7 +30,6 @@
 - [x] [Animated Navbar Underline](./02-css-advanced/animated-navbar-underline) — هایلایت انیمیشنی روی لینک‌ها و دکمه‌ها با hover
 
 ### 📁 [03 - JavaScript Fundamentals](./03-javascript-fundamentals)
-*(در حال کار)*
 
 هدف این بخش نه فقط یادگیری JS، بلکه آماده‌سازی ذهنی برای **React** است. تمرین‌ها طوری چیده شدن که مفاهیمی مثل state، event handling و component thinking را حتی بدون فریم‌ورک تمرین کنی.
 
@@ -43,9 +42,9 @@
 - [X] [Mini Weather App with Fetch (ترکیب DOM + async + state)](./03-javascript-fundamentals/mini-weather-app)
 
 ### 📁 04 - Mini Projects
-*(بعداً تکمیل و لینک می‌شود)*
+*(در حال کار)*
 
-- [ ] Calculator (منطق + event handling)
+- [X] [Calculator (منطق + event handling)](./04-mini-projects/calculator)
 - [ ] Quiz App (state management پیچیده‌تر: سوال فعلی، امتیاز، پاسخ‌ها)
 - [ ] Filterable Product List (رندر پویا از یک آرایه‌ی داده — دقیقاً همون کاری که بعداً با React انجام می‌دی)
 
