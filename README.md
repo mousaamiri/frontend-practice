@@ -40,7 +40,7 @@
 - [X] [Vanilla JS To-Do List (مدیریت state با یک آبجکت JS ساده، بدون فریم‌ورک)](./03-javascript-fundamentals/vanilla-js-do-do-list)
 - [X] [Component-style Counter (تابعی که یک تکه UI را «رندر» می‌کند و با تغییر state دوباره رندر می‌شود — شبیه‌سازی ذهنی الگوی React)](./03-javascript-fundamentals/component-style-counter)
 - [X] [Fetch API Practice (async/await, error handling, loading state)](./03-javascript-fundamentals/fetch-api-practice)
-- [ ] Mini Weather App with Fetch (ترکیب DOM + async + state)
+- [X] [Mini Weather App with Fetch (ترکیب DOM + async + state)](./03-javascript-fundamentals/mini-weather-app)
 
 ### 📁 04 - Mini Projects
 *(بعداً تکمیل و لینک می‌شود)*
