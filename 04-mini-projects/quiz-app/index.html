@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="quiz">
+        <header class="quiz__header">
+            <h1>Quiz App</h1>
+            <div class="quiz__info">
+                <span>سوال <span id="question-number">-</span> از <span id="question-count">-</span></span>
+                <span>امتیاز: <span id="score">-</span></span>
+            </div>
+        </header>
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="quiz__content">
+            <div class="question">
+                <h2 id="question-text">
+                   --
+                </h2>
+            </div>
+            <div id="options-container" class="options">
+                
+            </div>
+            <div class="quiz__actions">
+                <button id="next-btn">
+                    سوال بعد
+                </button>
+            </div>
+        </section>
+
+        <!-- Result Screen -->
+        <section id="result-screen" class="result" hidden>
+            <h2>🎉 آزمون به پایان رسید</h2>
+            <p>
+                شما
+                <strong id="result-score">-</strong>
+                پاسخ صحیح از
+                <strong id="result-question-count">--</strong>
+                سوال داده‌اید.
+            </p>
+            <div class="result__actions">
+                <button id="restart-btn">
+                    شروع دوباره
+                </button>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
