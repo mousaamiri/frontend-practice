@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Product List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="products-page">
+
+        <header class="page-header">
+            <h1>📦 لیست محصولات</h1>
+            <p>جستجو، فیلتر و مرتب‌سازی محصولات</p>
+        </header>
+
+        <!-- Filters -->
+        <section class="filters">
+
+            <div class="filter-group">
+                <label for="search-input">جستجو</label>
+                <input
+                    id="search-input"
+                    type="text"
+                    placeholder="نام محصول را وارد کنید..."
+                >
+            </div>
+
+            <div class="filter-group">
+                <label for="category-select">دسته‌بندی</label>
+
+                <select id="category-select">
+
+                    <option  value="all">
+                        همه دسته‌ها
+                    </option>
+
+                    <!-- با JavaScript پر می‌شود -->
+
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="sort-select">مرتب‌سازی</label>
+
+                <select id="sort-select">
+                    <option value="name">نام (A-Z)</option>
+                    <option value="price-asc">ارزان‌ترین</option>
+                    <option value="price-desc">گران‌ترین</option>
+                </select>
+            </div>
+
+            <div class="filter-group checkbox-group">
+
+                <input
+                    id="stock-only"
+                    type="checkbox"
+                >
+
+                <label for="stock-only">
+                    فقط کالاهای موجود
+                </label>
+
+            </div>
+
+        </section>
+
+        <!-- Summary -->
+
+        <section class="summary">
+
+            <span>
+                تعداد محصولات:
+                <strong id="products-count">10</strong>
+            </span>
+
+        </section>
+
+        <!-- Product List -->
+
+        <section
+            id="product-list"
+            class="products-grid"
+        >
+
+            <!-- Fake Card -->
+
+            <article class="product-card">
+
+                <h3>Laptop</h3>
+
+                <p class="category">
+                    Electronics
+                </p>
+
+                <p class="price">
+                    $1200
+                </p>
+
+                <p class="stock in-stock">
+                    موجودی: 8
+                </p>
+
+            </article>
+
+            <article class="product-card">
+
+                <h3>Gaming Chair</h3>
+
+                <p class="category">
+                    Furniture
+                </p>
+
+                <p class="price">
+                    $280
+                </p>
+
+                <p class="stock out-of-stock">
+                    ناموجود
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- Empty State -->
+
+        <section
+            id="empty-state"
+            class="empty-state"
+            
+        >
+
+            <h2>😕</h2>
+
+            <p>
+                محصولی با این مشخصات پیدا نشد.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

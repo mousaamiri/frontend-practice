@@ -46,7 +46,7 @@
 
 - [X] [Calculator (منطق + event handling)](./04-mini-projects/calculator)
 - [X] [Quiz App (state management پیچیده‌تر: سوال فعلی، امتیاز، پاسخ‌ها)](./04-mini-projects/quiz-app)
-- [ ] Filterable Product List (رندر پویا از یک آرایه‌ی داده — دقیقاً همون کاری که بعداً با React انجام می‌دی)
+- [X] [Filterable Product List (رندر پویا از یک آرایه‌ی داده — دقیقاً همون کاری که بعداً با React انجام می‌دی)](./04-mini-projects/filterable-product-list)
 
 ### 📁 05 - React Readiness *(پل بین JS و React)*
 *(بعداً تکمیل و لینک می‌شود)*
