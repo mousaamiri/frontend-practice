@@ -2,22 +2,32 @@ const container = document.getElementById('notesContainer')
 const noteInput = document.getElementById('addNoteInput')
 const addNoteBtn = document.getElementById('addNoteBtn')
 
-let notes = []
-
-function addNote(title) {
-    if (title.trim() !== "" && !notes.find(note=>note.title===title)) {
-        notes.push({ id: Date.now(), title, done: false })
-        render()
-    }
+let state = { todos: [] }
+setState(state)
+function addTodo(text) {
+    if(text.trim()==="")return;
+    setState({ todos: [...state.todos, { id: Date.now(), text, done: false }] })
 }
-function deleteNote(id) {
-    notes = notes.filter(n => n.id !== id)
+function toggleTodo(id) {
+    setState({
+        todos: state.todos.map(t => t.id === id ? { ...t, done: !t.done } : t)
+    })
+}
+function deleteTodo(id) {
+    setState({ todos: state.todos.filter(t => t.id !== id) })
+}
+function setState(newState) {
+    state = { ...state, ...newState }
     render()
 }
 function render() {
     container.innerHTML = ""
-    notes.forEach(note => {
-        const noteContainer = document.createElement('div')
+    state.todos.forEach(todo => {
+        container.appendChild(renderNoteItem(todo))
+    })
+}
+function renderNoteItem(todo) {
+     const noteContainer = document.createElement('div')
         noteContainer.className = 'note-container'
         const inputContainer = document.createElement('label')
         inputContainer.className = 'input-container'
@@ -25,9 +35,9 @@ function render() {
         const noteStateCheckBox = document.createElement('input')
         noteStateCheckBox.setAttribute('type', 'checkbox')
         noteStateCheckBox.className = 'note-state'
-        noteStateCheckBox.checked = note.done
+        noteStateCheckBox.checked = todo.done
         noteStateCheckBox.addEventListener('change', () => {
-            note.done = noteStateCheckBox.checked;
+            toggleTodo(todo.id)
         });
 
         const checkmark = document.createElement('span')
@@ -35,7 +45,7 @@ function render() {
 
         const noteTitle = document.createElement('h6')
         noteTitle.className = 'note-title'
-        noteTitle.textContent = note.title
+        noteTitle.textContent = todo.text
 
         inputContainer.appendChild(noteStateCheckBox)
         inputContainer.appendChild(checkmark)
@@ -45,23 +55,22 @@ function render() {
         deleteBtn.className = 'delete-note'
         deleteBtn.textContent = 'Delete'
         deleteBtn.addEventListener('click', () => {
-            deleteNote(note.id)
+            deleteTodo(todo.id)
         })
 
         noteContainer.appendChild(inputContainer)
         noteContainer.appendChild(deleteBtn)
 
-        container.appendChild(noteContainer)
-    })
+    return noteContainer
 }
 addNoteBtn.addEventListener('click', (e) => {
     e.preventDefault()
-    addNote(noteInput.value)
+    addTodo(noteInput.value)
     noteInput.value = ""
 })
 noteInput.addEventListener('keyup', (e) => {
     if (e.key === "Enter") {
-        addNote(noteInput.value)
+        addTodo(noteInput.value)
         noteInput.value = ""
     }
 })

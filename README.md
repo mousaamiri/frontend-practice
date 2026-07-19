@@ -42,17 +42,15 @@
 - [X] [Mini Weather App with Fetch (ترکیب DOM + async + state)](./03-javascript-fundamentals/mini-weather-app)
 
 ### 📁 04 - Mini Projects
-*(در حال کار)*
 
 - [X] [Calculator (منطق + event handling)](./04-mini-projects/calculator)
 - [X] [Quiz App (state management پیچیده‌تر: سوال فعلی، امتیاز، پاسخ‌ها)](./04-mini-projects/quiz-app)
 - [X] [Filterable Product List (رندر پویا از یک آرایه‌ی داده — دقیقاً همون کاری که بعداً با React انجام می‌دی)](./04-mini-projects/filterable-product-list)
 
 ### 📁 05 - React Readiness *(پل بین JS و React)*
-*(بعداً تکمیل و لینک می‌شود)*
 
-- [ ] بازنویسی To-Do List با الگوی "state + render function" به شکل خالص‌تر
-- [ ] آشنایی مفهومی با JSX (بدون نصب چیزی، فقط مقایسه با کدی که خودت نوشتی)
+- [X] [بازنویسی To-Do List با الگوی "state + render function" به شکل خالص‌تر](./03-javascript-fundamentals/vanilla-js-do-do-list)
+- [X] آشنایی مفهومی با JSX (بدون نصب چیزی، فقط مقایسه با کدی که خودت نوشتی)
 
 ---
 
